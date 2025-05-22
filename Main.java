@@ -58,6 +58,20 @@ class Classroom {
 public class Main {
     public static void main(String[] args) {
         
+        Classroom classroom = new Classroom();
+
+        
+        classroom.addStudent(new Student(101, "Alice Smith", 12));
+        classroom.addStudent(new Student(102, "Bob Jones", 15));
+        classroom.addStudent(new Student(103, "Carol Lee", 10));
+
+        
+        classroom.updateAttendance(102, 16);
+
+        
+        classroom.updateAttendance(104, 14);
+
+        
         classroom.displayAllStudents();
-    }
+    }
 }

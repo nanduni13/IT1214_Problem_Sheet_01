@@ -47,14 +47,20 @@ class Parking {
 
 }
 
-public class Vehicle {
+public class Main {
     public static void main(String[] args) {
-        // Create parking lot instance
-        Parking p = new Parking();
+        
+        Parking p = new ParkingLot();
 
         
+        p.parkVehicle(new Vehicle("ABC123", "John Doe", 2));
+        p.parkVehicle(new Vehicle("XYZ789", "Jane Smith", 4));
+        p.parkVehicle(new Vehicle("LMN456", "Bob Brown", 1));
 
-        // Display all parked vehicles
+        
+        p.removeVehicle("XYZ789");
+
+       
         p.displayAllVehicles();
-    }
+    }
 }
