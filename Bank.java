@@ -44,27 +44,13 @@ class Bank {
         
     }
 
-    public void displayAccounts() {
-        for (int i = 0; i < count; i++) {
-            System.out.println(accounts[i]);
-        }
+   
     }
 }
 
 public class Bank {
     public static void main(String[] args) {
-        Bank bank = new Bank();
-
         
-        bank.addAccount(new BankAccount(1001, "Alice", 5000.0));
-        bank.addAccount(new BankAccount(1002, "Bob", 3000.0));
-
-       
-        bank.withdraw(1001, 6000.0);
-
-        
-        bank.withdraw(1002, 1000.0);
-
       
         bank.displayAccounts();
     }
