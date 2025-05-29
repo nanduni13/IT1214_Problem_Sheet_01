@@ -30,17 +30,8 @@ class Vehicle1 {
 }
 
 class Parking {
-    private Vehicle[] vehicles = new Vehicle[5];
-    private int count = 0;
-
-    // Add vehicle
-    public void parkVehicle(Vehicle vehicle) {
-        if (count < 5) {
-            vehicles[count] = vehicle;
-            count++;
-        } else {
-            System.out.println("Parking lot is full.");
-        }
+   
+    
     }
 
     
@@ -50,17 +41,6 @@ class Parking {
 public class Main {
     public static void main(String[] args) {
         
-        Parking p = new ParkingLot();
-
         
-        p.parkVehicle(new Vehicle("ABC123", "John Doe", 2));
-        p.parkVehicle(new Vehicle("XYZ789", "Jane Smith", 4));
-        p.parkVehicle(new Vehicle("LMN456", "Bob Brown", 1));
-
-        
-        p.removeVehicle("XYZ789");
-
-       
-        p.displayAllVehicles();
     }
 }
